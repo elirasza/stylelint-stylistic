@@ -1,0 +1,57 @@
+{
+  "files.exclude": {
+    "**/node_modules/": true,
+    "**/yarn.lock": true,
+    "**/yarn-error.log/": true
+  },
+  "files.associations": {
+    ".eslintrc": "json",
+    ".stylelintrc": "json",
+  },
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "typescript.validate.enable": false,
+  "jest.jestCommandLine": "yarn test",
+  "jest.autoRevealOutput": "off",
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": [
+    "."
+  ],
+  "eslint.validate": [
+    "javascript",
+  ],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.configFile": ".stylelintrc",
+  "stylelint.ignoreDisables": false,
+  "stylelint.packageManager": "yarn",
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "less",
+    "javascript"
+  ],
+  "[css]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.suggest.insertMode": "replace",
+    "files.insertFinalNewline": true
+  },
+}

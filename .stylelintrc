@@ -1,0 +1,21 @@
+{
+  "customSyntax": "postcss-syntax",
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "./lib/main.js"
+  ],
+  "rules": {
+    "alpha-value-notation": "number",
+    "stylistic/indentation": 2
+  },
+  "overrides": [
+    {
+      "customSyntax": "css",
+      "files": [
+        "examples/**/*.css"
+      ]
+    }
+  ]
+}

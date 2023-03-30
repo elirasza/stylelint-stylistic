@@ -1,0 +1,18 @@
+# Environment files
+.env
+
+# OS specific directories
+.DS_Store
+
+# Test output
+jest.result.json
+coverage/
+
+# Packages
+/node_modules
+yarn-error.log*
+yarn-debug.log*
+.yarn-integrity
+
+# Compiled files
+dist/

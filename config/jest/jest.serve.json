@@ -1,0 +1,9 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "destination": "/index.html",
+      "source": "/"
+    }
+  ]
+}
