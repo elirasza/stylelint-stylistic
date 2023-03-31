@@ -1,0 +1,38 @@
+name: validation
+on:
+  workflow_call:
+  pull_request:
+  push:
+    branches:
+      - main
+      - demo
+
+jobs:
+  setup:
+    uses: "./.github/workflows/setup.yml"
+  lint:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - uses: actions/cache@v3
+        with:
+          key: modules
+          path: ./node_modules
+      - run: yarn lint:code:all
+  test:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - uses: actions/cache@v3
+        with:
+          key: modules
+          path: ./node_modules
+      - run: yarn lint:code:all

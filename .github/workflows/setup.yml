@@ -1,0 +1,17 @@
+name: setup
+on:
+  workflow_call:
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+      - run: npm install --global yarn
+      - run: yarn install --check-files --ignore-optional --pure-lockfile --cache-folder .yarn
+      - uses: actions/cache@v3
+        with:
+          key: modules
+          path: ./node_modules

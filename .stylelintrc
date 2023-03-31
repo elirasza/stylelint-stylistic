@@ -8,6 +8,8 @@
   ],
   "rules": {
     "alpha-value-notation": "number",
+    "stylistic/declaration-block-semicolon-space-before": "never",
+    "stylistic/block-opening-brace-space-before": "always",
     "stylistic/indentation": 2
   },
   "overrides": [
