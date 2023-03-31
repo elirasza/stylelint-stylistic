@@ -3,7 +3,7 @@
   "license": "MIT",
   "author": {
     "email": "thibaud.laurent@elira.fr",
-    "name": "Elirasza"
+    "name": "elirasza"
   },
   "description": "Plugin for endangered stylelint stylistic rules",
   "main": "lib/main.js",

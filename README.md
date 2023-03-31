@@ -27,11 +27,8 @@ yarn add stylelint-stylistic --dev
 Then, append the plugin to your stylelint configuration plugins :
 
 ```json
-/* .stylelintrc, stylelint.config or stylelint field in package.json */
 {
-  ...
   "plugins": [
-    ...
     "stylelint-stylistic"
   ]
 }
