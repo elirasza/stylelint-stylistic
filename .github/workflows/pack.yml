@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 14
       - uses: little-core-labs/get-git-tag@v3.0.1
-      - run: echo ${{ vars.NPM_REGISTRY }}:_authToken=${{ vars.NPM_TOKEN }} >> .npmrc
+      - run: echo ${{ vars.NPM_REGISTRY }}:_authToken=${{ secrets.NPM_TOKEN }} >> .npmrc
       - run: npm version $GIT_TAG_NAME --no-git-tag-version
-      - run: npm publish --registry ${{ vars.NPM_REGISTRY }} --access public
+      - run: npm publish --registry https:${{ vars.NPM_REGISTRY }} --access public
