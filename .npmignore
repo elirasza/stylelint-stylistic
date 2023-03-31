@@ -3,7 +3,8 @@
 
 # Config files
 config/
-.vscode/**/*
+.github/
+.vscode/
 .eslintrc
 .stylelintrc
 
