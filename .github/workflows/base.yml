@@ -1,4 +1,4 @@
-name: setup
+name: base
 on:
   workflow_call:
 jobs:
@@ -9,8 +9,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "14"
-      - run: npm install --global yarn
-      - run: yarn install --check-files --ignore-optional --pure-lockfile --cache-folder .yarn
+      - run: ./.github/scripts/setup.sh
+        shell: bash
       - uses: actions/cache@v3
         with:
           key: modules

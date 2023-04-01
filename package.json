@@ -6,9 +6,10 @@
     "email": "thibaud.laurent@elira.fr",
     "name": "elirasza"
   },
+  "homepage": "https://github.com/elirasza/stylelint-stylistic",
   "repository": {
     "type": "git",
-    "url": "github.com/elirasza/stylelint-stylistic"
+    "url": "https://github.com/elirasza/stylelint-stylistic"
   },
   "main": "lib/main.js",
   "engines": {

@@ -1,0 +1,22 @@
+name: release
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  quality:
+    uses: "./.github/workflows/quality.yml"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: validate
+    env:
+      NPM_REGISTRY: ${{ vars.NPM_REGISTRY }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - uses: little-core-labs/get-git-tag@v3.0.1
+      - run: ./.github/scripts/deploy.sh
+        shell: bash
