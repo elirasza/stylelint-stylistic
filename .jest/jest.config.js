@@ -2,7 +2,7 @@ module.exports = {
   collectCoverageFrom: [
     '**/index.js',
   ],
-  coverageDirectory: 'config/jest/coverage',
+  coverageDirectory: '.jest/coverage',
   coverageReporters: ['lcov'],
   coverageThreshold: {
     global: {
@@ -13,9 +13,9 @@ module.exports = {
     },
   },
   preset: 'jest-preset-stylelint',
-  rootDir: './../..',
+  rootDir: './..',
   setupFilesAfterEnv: [
-    './config/jest/jest.setup.js',
+    './.jest/jest.setup.js',
   ],
   verbose: true,
 }

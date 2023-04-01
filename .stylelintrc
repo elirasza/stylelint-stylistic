@@ -1,7 +1,7 @@
 {
   "customSyntax": "postcss-syntax",
   "extends": [
-    "."
+    "./config"
   ],
   "overrides": [
     {

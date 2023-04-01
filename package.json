@@ -54,11 +54,11 @@
   },
   "scripts": {
     "reinstall": "rm -rf node_modules && rm -f yarn-error.log && yarn install --check-files",
-    "test": "jest --config config/jest/jest.config.js --passWithNoTests",
+    "test": "jest --config .jest/jest.config.js --passWithNoTests",
     "test:watch": "yarn test --watch",
-    "test:output": "yarn test --json --outputFile=config/jest/jest.result.json",
-    "test:coverage": "jest --clearCache && rm -rf config/jest/coverage && yarn test:output --coverage",
-    "test:coverage:inspect": "yarn test:coverage || (cp config/jest/jest.serve.json config/jest/coverage/lcov-report/serve.json && serve config/jest/coverage/lcov-report -p 8081)",
+    "test:output": "yarn test --json --outputFile=.jest/jest.result.json",
+    "test:coverage": "jest --clearCache && rm -rf .jest/coverage && yarn test:output --coverage",
+    "test:coverage:inspect": "yarn test:coverage || (cp .jest/jest.serve.json .jest/coverage/lcov-report/serve.json && serve .jest/coverage/lcov-report -p 8081)",
     "lint:code": "eslint --max-warnings 0",
     "lint:code:all": "yarn lint:code 'lib/**/*.js'"
   }

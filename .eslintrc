@@ -8,7 +8,7 @@
   "overrides": [
     {
       "files": [
-        "index.js"
+        "main.js"
       ],
       "rules": {
         "global-require": "off"

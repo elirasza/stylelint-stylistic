@@ -1,5 +1,8 @@
 # stylelint-stylistic
 
+![main branch quality workflow](https://github.com/elirasza/stylelint-stylistic/actions/workflows/quality.yml/badge.svg?branch=main)
+![latest tag release workflow](https://github.com/elirasza/stylelint-stylistic/actions/workflows/release.yml/badge.svg?event=push)
+
 Plugin for endangered stylelint stylistic rules.
 
 As of its version 15, the popular [stylelint](https://stylelint.io/) package will slowly [deprecate and remove 76 stylistic rules](https://stylelint.io/migration-guide/to-15/).
@@ -30,6 +33,16 @@ Then, append the plugin to your stylelint configuration plugins :
 {
   "plugins": [
     "stylelint-stylistic"
+  ]
+}
+```
+
+Or alternatively, if you wish to use the plugin default config, you can directly extend it :
+
+```json
+{
+  "extends": [
+    "stylelint-stylistic/config"
   ]
 }
 ```
