@@ -2,8 +2,8 @@
 .env*
 
 # Config files
-config/
 .github/
+.jest/
 .vscode/
 .eslintrc
 .stylelintrc
