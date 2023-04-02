@@ -2,6 +2,7 @@
 
 ![main branch quality workflow](https://github.com/elirasza/stylelint-stylistic/actions/workflows/quality.yml/badge.svg?branch=main)
 ![latest tag release workflow](https://github.com/elirasza/stylelint-stylistic/actions/workflows/release.yml/badge.svg?event=push)
+[![npm version](https://badge.fury.io/js/stylelint-stylistic.svg)](https://www.npmjs.com/package/stylelint-stylistic)
 
 Plugin for endangered stylelint stylistic rules.
 
