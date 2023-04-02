@@ -19,7 +19,6 @@
     "stylelint",
     "stylistic"
   ],
-  "type": "module",
   "main": "lib/main.js",
   "engines": {
     "node": ">=14.x"
