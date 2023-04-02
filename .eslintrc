@@ -3,20 +3,22 @@
     "node": true
   },
   "extends": [
-    "airbnb-base"
+    "airbnb-base",
+    "airbnb-typescript/base"
   ],
   "overrides": [
     {
       "files": [
-        "main.js"
+        "main.ts"
       ],
       "rules": {
-        "global-require": "off"
+        "global-require": "off",
+        "import/no-dynamic-require": "off"
       }
     },
     {
       "files": [
-        "lib/rules/**/index.js"
+        "lib/rules/**/*.js"
       ],
       "rules": {
         "consistent-return": "off",
@@ -38,6 +40,10 @@
           {
             "destructuring": "all"
           }
+        ],
+        "semi": [
+          "error",
+          "never"
         ]
       }
     },
@@ -69,6 +75,7 @@
     "extraFileExtensions": [
       ".json"
     ],
+    "project": "tsconfig.json",
     "sourceType": "module"
   },
   "rules": {
@@ -96,9 +103,26 @@
       "error",
       "single"
     ],
-    "semi": [
+    "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/no-unused-vars": [
       "error",
-      "never"
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/type-annotation-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": false,
+        "overrides": {
+          "arrow": {
+            "after": true,
+            "before": true
+          }
+        }
+      }
     ]
   }
 }

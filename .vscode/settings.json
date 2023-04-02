@@ -12,7 +12,6 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
-  "typescript.validate.enable": false,
   "jest.jestCommandLine": "yarn test",
   "jest.autoRevealOutput": "off",
   "eslint.format.enable": true,
@@ -21,6 +20,7 @@
   ],
   "eslint.validate": [
     "javascript",
+    "typescript",
   ],
   "eslint.codeAction.showDocumentation": {
     "enable": true
@@ -35,7 +35,8 @@
     "css",
     "scss",
     "less",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
   "[css]": {
     "editor.codeActionsOnSave": {
@@ -53,6 +54,13 @@
     }
   },
   "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+  },
+  "[typescript]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,

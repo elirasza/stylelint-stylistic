@@ -9,10 +9,10 @@ jest.result.json
 coverage/
 
 # Packages
-/node_modules
+/node_modules/
 yarn-error.log*
 yarn-debug.log*
 .yarn-integrity
 
 # Compiled files
-dist/
+/dist/
