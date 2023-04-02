@@ -9,6 +9,25 @@
       "files": [
         "examples/**/*.css"
       ]
+    },
+    {
+      "customSyntax": "scss",
+      "files": [
+        "examples/**/*.scss",
+        "examples/**/*.sass"
+      ]
+    },
+    {
+      "customSyntax": "less",
+      "files": [
+        "examples/**/*.less"
+      ]
+    },
+    {
+      "customSyntax": "postcss-styled-syntax",
+      "files": [
+        "examples/**/*.js"
+      ]
     }
   ]
 }

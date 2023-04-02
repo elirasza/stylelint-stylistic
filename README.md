@@ -9,7 +9,7 @@ As of its version 15, the popular [stylelint](https://stylelint.io/) package wil
 
 The proposed solution was to move to other specialized formatting packages like [prettier](https://prettier.io/), but it proved to be a tedious task on large projects. Not all of them are able to shift easily and fix the potential conflicts between different linters / formatters (especially on hybrid linting environments such as CSS-in-JS).
 
-As these endangered rules were working quite well, and alongside the stylelint reco mmendation, I decided to move them to this package in order to maintain them. Only a soft migration will be need to keep them in your projects.
+As these endangered rules were working quite well, and alongside the stylelint recommendation, I have decided to move them to this package in order to maintain them. Only a soft migration will be need to keep them in your projects.
 
 ## 1. Getting started
 

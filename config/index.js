@@ -65,4 +65,14 @@ module.exports = {
     'stylistic/value-list-comma-space-before': 'never',
     'stylistic/value-list-max-empty-lines': 0,
   },
+  overrides: [
+    {
+      files: [
+        '**/*.{js,jsx,ts,tsx,cjs,mjs}',
+      ],
+      rules: {
+        'stylistic/no-empty-first-line': null,
+      },
+    },
+  ],
 }

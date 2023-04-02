@@ -42,6 +42,16 @@
       "source.fixAll.stylelint": true
     }
   },
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[less]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
