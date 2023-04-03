@@ -1,6 +1,8 @@
-module.exports = {
+export default {
   collectCoverageFrom: [
-    '**/index.js',
+    '/lib/**/*.js',
+    '/lib/**/*.ts',
+    '!/lib/**/*.d.ts',
   ],
   coverageDirectory: '.jest/coverage',
   coverageReporters: ['lcov'],
@@ -15,7 +17,12 @@ module.exports = {
   preset: 'jest-preset-stylelint',
   rootDir: './..',
   setupFilesAfterEnv: [
-    './.jest/jest.setup.js',
+    './.jest/jest.setup.ts',
   ],
+  transform: {
+    '^.+\\.ts$': ['ts-jest', {
+      isolatedModules: true,
+    }],
+  },
   verbose: true,
 }
