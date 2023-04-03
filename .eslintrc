@@ -3,10 +3,43 @@
     "node": true
   },
   "extends": [
-    "airbnb-base",
-    "airbnb-typescript/base"
+    "airbnb-base"
   ],
   "overrides": [
+    {
+      "files": [
+        "**/*.ts"
+      ],
+      "extends": [
+        "airbnb-typescript/base"
+      ],
+      "rules": {
+        "@typescript-eslint/dot-notation": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "_"
+          }
+        ],
+        "@typescript-eslint/semi": [
+          "error",
+          "never"
+        ],
+        "@typescript-eslint/type-annotation-spacing": [
+          "error",
+          {
+            "after": true,
+            "before": false,
+            "overrides": {
+              "arrow": {
+                "after": true,
+                "before": true
+              }
+            }
+          }
+        ]
+      }
+    },
     {
       "files": [
         "main.ts"
@@ -52,7 +85,7 @@
         "jest/globals": true
       },
       "files": [
-        "**/tests/*.js"
+        "lib/**/tests/**/*.js"
       ],
       "globals": {
         "testRule": true
@@ -66,7 +99,11 @@
           "error",
           300
         ],
-        "no-useless-concat": "off"
+        "no-useless-concat": "off",
+        "semi": [
+          "error",
+          "never"
+        ]
       }
     }
   ],
@@ -102,27 +139,6 @@
     "quotes": [
       "error",
       "single"
-    ],
-    "@typescript-eslint/dot-notation": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "argsIgnorePattern": "_"
-      }
-    ],
-    "@typescript-eslint/semi": "off",
-    "@typescript-eslint/type-annotation-spacing": [
-      "error",
-      {
-        "after": true,
-        "before": false,
-        "overrides": {
-          "arrow": {
-            "after": true,
-            "before": true
-          }
-        }
-      }
     ]
   }
 }
