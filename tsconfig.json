@@ -20,7 +20,7 @@
     "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es5",
+    "target": "es2020",
   },
   "include": [
     "lib/**/*.js",
