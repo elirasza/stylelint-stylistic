@@ -20,6 +20,11 @@
     "stylistic"
   ],
   "main": "lib/main.js",
+  "files": [
+    "config/index.js",
+    "lib/**/*.js",
+    "!lib/**/tests/"
+  ],
   "engines": {
     "node": ">=14.x"
   },
