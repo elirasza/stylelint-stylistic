@@ -18,7 +18,7 @@ jobs:
           node-version: 14
       - uses: actions/cache@v3
         with:
-          key: modules
+          key: modules-${{ github.sha }}
           path: ./node_modules
       - run: ./.github/scripts/lint.sh
         shell: bash
@@ -32,7 +32,7 @@ jobs:
           node-version: 14
       - uses: actions/cache@v3
         with:
-          key: modules
+          key: modules-${{ github.sha }}
           path: ./node_modules
       - run: ./.github/scripts/test.sh
         shell: bash

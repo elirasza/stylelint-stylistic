@@ -13,5 +13,5 @@ jobs:
         shell: bash
       - uses: actions/cache@v3
         with:
-          key: modules
+          key: modules-${{ github.sha }}
           path: ./node_modules
