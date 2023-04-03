@@ -137,4 +137,18 @@ All rules were moved, according to `stylelint` plugin convention, to the `stylis
 
 ## 3. Contribution
 
-All contributions are welcome, I will read all pull requests. For now, my focus will be to move all the rules to ES6 modules, and try to improve them.
+All contributions are welcome, I will read all pull requests. For now, my focus will be to move all the rules to TS modules, and try to improve them.
+
+The project uses [yarn](https://www.npmjs.com/package/yarn) as a package manager. Once installed, clone the repository, and install the dependencies :
+
+```bash
+yarn reinstall
+```
+
+You will then be able to compile the library :
+
+```bash
+yarn build
+```
+
+Some examples are available in the `examples` folder as a playground zone.
