@@ -12,6 +12,7 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
+  "json.format.keepLines": true,
   "jest.jestCommandLine": "yarn test",
   "jest.autoRevealOutput": "off",
   "eslint.format.enable": true,
