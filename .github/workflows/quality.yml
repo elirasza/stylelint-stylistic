@@ -37,3 +37,21 @@ jobs:
           path: ./node_modules
       - run: ./.github/scripts/test.sh
         shell: bash
+  build:
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - uses: actions/cache@v3
+        with:
+          key: modules-${{ github.sha }}
+          path: ./node_modules
+      - run: ./.github/scripts/build.sh
+        shell: bash
+      - uses: actions/cache@v3
+        with:
+          key: build-${{ github.sha }}
+          path: ./dist

@@ -17,6 +17,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
+      - uses: actions/cache@v3
+        with:
+          key: build-${{ github.sha }}
+          path: ./dist
       - uses: little-core-labs/get-git-tag@v3.0.1
       - run: ./.github/scripts/deploy.sh
         shell: bash

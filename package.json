@@ -13,9 +13,12 @@
   },
   "keywords": [
     "config",
+    "deprecated",
     "lint",
     "linting",
     "plugin",
+    "pretty",
+    "rules",
     "stylelint",
     "stylistic"
   ],
@@ -69,6 +72,7 @@
   "scripts": {
     "reinstall": "rm -rf node_modules && rm -f yarn-error.log && yarn install --check-files",
     "build": "rm -rf dist && tsc",
+    "build:production": "yarn build --declarationMap false --inlineSourceMap false",
     "test": "jest --config .jest/jest.config.ts --passWithNoTests",
     "test:watch": "yarn test --watch",
     "test:output": "yarn test --json --outputFile=.jest/jest.result.json",
