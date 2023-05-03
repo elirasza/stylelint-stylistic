@@ -28,9 +28,6 @@
     "dist",
     "!dist/**/tests/*"
   ],
-  "engines": {
-    "node": ">=14.x"
-  },
   "dependencies": {
     "postcss": "^8.4.21",
     "postcss-media-query-parser": "^0.2.3",
