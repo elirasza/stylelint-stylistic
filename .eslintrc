@@ -99,11 +99,7 @@
           "error",
           300
         ],
-        "no-useless-concat": "off",
-        "semi": [
-          "error",
-          "never"
-        ]
+        "no-useless-concat": "off"
       }
     }
   ],
@@ -139,6 +135,10 @@
     "quotes": [
       "error",
       "single"
+    ],
+    "semi": [
+      "error",
+      "never"
     ]
   }
 }

@@ -72,6 +72,7 @@ module.exports = {
       ],
       rules: {
         'stylistic/no-empty-first-line': null,
+        'stylistic/string-quotes': 'single',
       },
     },
   ],
