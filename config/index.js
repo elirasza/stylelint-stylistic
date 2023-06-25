@@ -42,6 +42,7 @@ module.exports = {
     'stylistic/media-query-list-comma-space-before': 'never',
     'stylistic/no-empty-first-line': true,
     'stylistic/no-eol-whitespace': true,
+    'stylistic/no-extra-semicolons': true,
     'stylistic/no-missing-end-of-source-newline': true,
     'stylistic/number-leading-zero': 'always',
     'stylistic/number-no-trailing-zeros': true,
