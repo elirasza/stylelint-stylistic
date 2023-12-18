@@ -1,6 +1,6 @@
 # This package has been deprecated in favor of [@stylistic/stylelint-plugin](https://github.com/stylelint-stylistic/stylelint-stylistic)
 
-It will still be usable with stylelint 15 but will no longer receive fixes.
+As I have very few free time to take care of this plugin, I have decided to share support of it with [firefoxic](https://github.com/firefoxic). As such, the new package will continue support for stylelint 16 and future update. Please note this current package will still be usable with stylelint 15 but will no longer receive fixes.
 
 # stylelint-stylistic
 
