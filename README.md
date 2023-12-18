@@ -1,3 +1,7 @@
+# This package has been deprecated in favor of [@stylistic/stylelint-plugin](https://github.com/stylelint-stylistic/stylelint-stylistic)
+
+It will still be usable with stylelint 15 but will no longer receive fixes.
+
 # stylelint-stylistic
 
 ![main branch quality workflow](https://github.com/elirasza/stylelint-stylistic/actions/workflows/quality.yml/badge.svg?branch=main)
